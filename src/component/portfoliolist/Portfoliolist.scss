@@ -1,0 +1,16 @@
+.portfoliolist{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px; 
+
+   //  width: 100px;
+   //      border: 2px solid red;
+    
+   &.aactive{
+       background-color: blueviolet;
+       color: white;
+       border-radius: 8px; 
+   }
+}

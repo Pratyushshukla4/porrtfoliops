@@ -1,0 +1,115 @@
+.portfolio{
+    /* background-color: lightgreen; */
+    // height: 100vh;
+    width: 98vw;  // ------------???????????
+     height: calc(100vh-70px);
+     scroll-snap-align: start;
+    //  border: 2px solid red;
+     margin-top: 70px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+    
+
+     ul{
+         display: flex;
+         list-style: none;
+         width: 600px;
+        //  border: 2px solid red;
+         justify-content: space-evenly;
+     }
+
+    
+
+   
+        
+        }
+         .portfoliocontainer{
+             display: flex;
+             flex-wrap: wrap;
+             width: 850px;
+            //  border: 2px solid red; 
+             justify-content: space-evenly;
+            //  align-items: center;
+            text-align: center;
+            // margin-top: 5px;
+            margin-bottom: 5px;
+
+             
+
+            .item{
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid gray;
+                // position: relative;--------->>>>>>>
+                color: white;
+                // margin: 10px 20px;
+                margin-bottom: 30px;
+                margin-top: 25px;
+                border-radius: 20px;
+                transition: all 1s ease;
+
+                img{
+                    width: 250px;
+                    height: 170px;
+                    object-fit: cover;
+                    z-index: 1;
+                    border-radius: 20px;
+                    
+                    
+                }
+                h3{
+                    // position: absolute;----?>>>
+                }
+                &:hover{
+                    transition: all 1s ease;
+                    cursor: pointer;
+                    background-color: gray;
+                    img{
+                        opacity: 0.2;
+                        // z-index: -1;
+                    }
+                }
+            }
+        //  }
+
+     
+
+     
+}
+
+@media only screen and (max-width: 830px) {
+    .portfoliocontainer{
+        flex-wrap: wrap;
+        width: auto;
+        // height: 1550px;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 525px) {
+    .portfoliocontainer{
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    .portfolio{
+        ul{
+            flex-wrap: wrap;
+            width: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 275px) {
+    .portfoliocontainer
+    { .item
+        
+        {img {
+            width: 200px;
+
+    }
+}
+}
+}
